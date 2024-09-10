@@ -1,0 +1,115 @@
+/* PopularCityBoard.css */
+
+.city-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+  grid-template-rows: repeat(2, 1fr); /* Two rows */
+  gap: 16px; /* Space between items */
+  padding: 20px; /* Padding around the board */
+  height: 100vh; /* Full viewport height */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd; /* Optional: card border */
+  border-radius: 8px; /* Optional: rounded corners */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: card shadow */
+  width: 100%; /* Full width of grid item */
+  height: 100%; /* Full height of grid item */
+}
+
+.card-img-container {
+  position: relative;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-body-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: rgba(39, 35, 35, 0.5);
+  text-align: center;
+}
+
+.card-text {
+  margin: 0;
+}
+
+
+
+
+.CityPanel{
+  display: flex;
+ 
+  width: 100%;
+  height: 90vh;
+  gap:10px
+
+}
+.Col1 ,.Col2 ,.Col3 {
+  flex-basis: 33.333333333%;
+  
+}
+.City1 ,.City2 {
+    height: 50%;
+    margin-bottom:10px
+}
+.City3,.City4,.City5 {
+  height: 33.33333%;
+  margin-bottom:5px
+}
+.City6,.City7 {
+  height: 50%;
+  margin-bottom:10px
+}
+.CityPanel img{
+  width: 100%;
+  height: 100%;
+  object-fit:  cover;
+  display: block;
+}
+.City1:hover img, .City2:hover img, .City3:hover img, .City4:hover img, .City5:hover img, .City6:hover img, .City7:hover img {
+  transform: scale(1.05);
+  
+ transition: 0.5s;
+}
+.City1, .City2, .City3, .City4, .City5, .City6, .City7 {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+ transition: 10s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.CityName {
+  position: absolute;
+  color: white;
+
+  padding: 15px;
+
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  width: 80%; 
+  max-width: 300px;
+  box-sizing: border-box; 
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); 
+}
