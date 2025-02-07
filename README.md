@@ -4,7 +4,7 @@ Welcome to the Full-Stack News Application, a dynamic platform that allows users
 
 🚀 Live Demo
 
-Video Explanation
+Video Explanation: https://drive.google.com/drive/folders/1wVr5eygm69rRFvZWTWzPNrKN-loWSe6A?usp=sharing
 
 📂 Project Resources
 
